@@ -10,5 +10,4 @@ This image was used as a banner for my home page:
 ![roses](images/blue-flowers-flower-roses-turquoise-wallpaper-preview.jpg)
 
 #### Figma file
-This is the figma file
 ![figma](https://www.figma.com/file/HPCeSi7mKDcDnm2UgmgynT/MTM6260-UX-Prototype?type=design&node-id=0-1&mode=design&t=qwumm6Wj6t5BEHOi-0)
