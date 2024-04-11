@@ -19,7 +19,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-info-subtle text-center">
+        <!-- Skip links -->
+        <a class="visually-hidden-focusable text-bg-dark" href="#nav">Skip to main nav</a>
+        <a class="visually-hidden-focusable text-bg-dark" href="#main">Skip to main content</a>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-info-subtle text-center" id="nav">
             <div class="container-xl">
                 <a class="navbar-brand" href="#">
                     <img src="./images/dwlogo.png" alt="design wrld">
@@ -62,29 +66,31 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <!-- Contact Us -->
         <section class="container-xl my-4 bg-primary p-2 text-white border rounded" id="contact">
-            <h1 class="display-1 text-center"><strong>Contact Us</strong></h2>
-                <div class="row">
-                    <div class="col">
-                        <h3 class="text-center"><strong>Send us a message</strong></h3>
-                        <form>
-                            <div class="mb-3">
-                                <label for="InputName" class="form-label">Full Name</label>
-                                <input type="text" class="form-control rounded" id="InputName">
-                            </div>
-                            <div class="mb-3">
-                                <label for="InputEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control rounded" id="InputEmail">
-                            </div>
-                            <div class="mb-3">
-                                <label for="InputMessage" class="form-label">Message</label>
-                                <input type="text" class="form-control rounded" id="InputMessage" cols="5" rows="5">
-                            </div>
-                            <button type="submit" class="btn btn-outline-light rounded">Submit</button>
-                        </form>
-                    </div>
+            <h2 class="display-1 text-center"><strong>Contact Us</strong></h2>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center"><strong>Send us a message</strong></h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="InputName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control rounded" id="InputName" aria-label="fullname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control rounded" id="InputEmail" aria-label="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="InputMessage" class="form-label">Message</label>
+                            <input type="text" class="form-control rounded" id="InputMessage" aria-label="message" cols="5" rows="5">
+                        </div>
+                        <button type="submit" class="btn btn-outline-light rounded">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- footer -->
     <footer class="bg-info-subtle py-4">
